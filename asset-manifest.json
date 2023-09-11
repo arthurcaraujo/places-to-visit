@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/places-to-visit/static/css/main.073c9b0a.css",
+    "main.js": "/places-to-visit/static/js/main.3de03913.js",
+    "static/js/787.9ded41b0.chunk.js": "/places-to-visit/static/js/787.9ded41b0.chunk.js",
+    "static/media/logo.svg": "/places-to-visit/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/places-to-visit/index.html",
+    "main.073c9b0a.css.map": "/places-to-visit/static/css/main.073c9b0a.css.map",
+    "main.3de03913.js.map": "/places-to-visit/static/js/main.3de03913.js.map",
+    "787.9ded41b0.chunk.js.map": "/places-to-visit/static/js/787.9ded41b0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.3de03913.js"
+  ]
+}
