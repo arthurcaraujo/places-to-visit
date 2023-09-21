@@ -3,7 +3,7 @@ export default [
         {
             countryName: "Australia",
             googleMapsLink: "https://www.google.com/maps/place/Mount+Wellington/@-42.89,147.23,13873m/data=!3m1!1e3!4m5!3m4!1s0xaa6e76921008211f:0xb901bf1b35fa27b9!8m2!3d-42.8900047!4d147.2299933",
-            img: "./aus-mount-wellington.jpg",
+            img: "aus-mount-wellington.jpg",
             location: "Hobart, Tasmania",
             title: "Mount Wellington",
             visited: false
