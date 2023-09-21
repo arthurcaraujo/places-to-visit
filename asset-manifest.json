@@ -1,15 +1,32 @@
 {
   "files": {
-    "main.css": "/places-to-visit/static/css/main.3b51d3d7.css",
-    "main.js": "/places-to-visit/static/js/main.a540d537.js",
+    "main.css": "/places-to-visit/static/css/main.c61220f5.css",
+    "main.js": "/places-to-visit/static/js/main.5eb1ad7d.js",
     "static/js/787.9ded41b0.chunk.js": "/places-to-visit/static/js/787.9ded41b0.chunk.js",
+    "static/media/nor-hammerfest.jpg": "/places-to-visit/static/media/nor-hammerfest.e7739dc11f1970dfc218.jpg",
+    "static/media/aus-hobart.jpg": "/places-to-visit/static/media/aus-hobart.a881ba6942d37f9b6e0e.jpg",
+    "static/media/aus-mount-wellington.jpg": "/places-to-visit/static/media/aus-mount-wellington.0c13dee8770cb6e83107.jpg",
+    "static/media/bra-balneario-camboriu.jpg": "/places-to-visit/static/media/bra-balneario-camboriu.f19fd112714d2a0a8fb9.jpg",
+    "static/media/aus-opera-house.jpg": "/places-to-visit/static/media/aus-opera-house.f88e5db7a19607b00b58.jpg",
+    "static/media/aus-port-arthur.jpg": "/places-to-visit/static/media/aus-port-arthur.55e35538d29a6253880f.jpg",
+    "static/media/nor-oslo.jpg": "/places-to-visit/static/media/nor-oslo.53f796fd188386d899d4.jpg",
+    "static/media/bra-brasilia-cathedral.jpg": "/places-to-visit/static/media/bra-brasilia-cathedral.5ab8b4cfe121cf4cf1bf.jpg",
+    "static/media/bra-inhotim.jpg": "/places-to-visit/static/media/bra-inhotim.94fd2d99348846081d04.jpg",
+    "static/media/aus-stanley.jpg": "/places-to-visit/static/media/aus-stanley.9fea7bc30f4a04ed9a51.jpg",
+    "static/media/bra-ouro-preto.jpg": "/places-to-visit/static/media/bra-ouro-preto.0d008cc78788c40b9418.jpg",
+    "static/media/bra-lencois.jpg": "/places-to-visit/static/media/bra-lencois.87524ee5e2f4b26dd5d8.jpg",
+    "static/media/aus-melbourne.jpg": "/places-to-visit/static/media/aus-melbourne.710557e4347f20b87857.jpg",
+    "static/media/bra-jalapao.jpg": "/places-to-visit/static/media/bra-jalapao.42fdaa04fe1dfeb0c4d2.jpg",
+    "static/media/bra-brasilia-museum.jpg": "/places-to-visit/static/media/bra-brasilia-museum.e4f0a50640bea0e4abd0.jpg",
+    "static/media/bra-gramado.jpg": "/places-to-visit/static/media/bra-gramado.c7a7ba3f63735ef08a8d.jpg",
+    "static/media/aus-12-apostles.jpg": "/places-to-visit/static/media/aus-12-apostles.fd7bc0cce5570c625371.jpg",
     "index.html": "/places-to-visit/index.html",
-    "main.3b51d3d7.css.map": "/places-to-visit/static/css/main.3b51d3d7.css.map",
-    "main.a540d537.js.map": "/places-to-visit/static/js/main.a540d537.js.map",
+    "main.c61220f5.css.map": "/places-to-visit/static/css/main.c61220f5.css.map",
+    "main.5eb1ad7d.js.map": "/places-to-visit/static/js/main.5eb1ad7d.js.map",
     "787.9ded41b0.chunk.js.map": "/places-to-visit/static/js/787.9ded41b0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3b51d3d7.css",
-    "static/js/main.a540d537.js"
+    "static/css/main.c61220f5.css",
+    "static/js/main.5eb1ad7d.js"
   ]
 }
