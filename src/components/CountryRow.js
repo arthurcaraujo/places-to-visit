@@ -9,7 +9,7 @@ export default function CountryRow({props}) {
     const [externalWidth, setExternalWidth] = useState(0);
     const [internalWidth, setInternalWidth] = useState(0);
     const [rowPosition, setRowPosition] = useState(0);
-    const [endScrolling, setEndScrolling] = useState(false);
+    // const [endScrolling, setEndScrolling] = useState(false);
 
     useLayoutEffect(() => {
         setExternalWidth(countryRowRef.current.clientWidth);
