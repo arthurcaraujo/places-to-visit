@@ -1,40 +1,32 @@
-/* IMPORTANT! */
-/* Implement scroll to top */
-/* Implement to-do-list style */
-/* NEXT/PREVIOUS buttons */
-
 .card {
-    /*background-color: crimson;  */
+    background-color: transparent;
     height: calc(300px + 2.2rem);
+    margin: 0 0.8rem;
     perspective: 1000px;
     width: 200px;
 }
 
 .card-inner {
-    /*background-color: yellowgreen;  */
+    border-radius: 1rem;
     height: calc(300px + 2.2rem);
     position: relative;
     transform-style: preserve-3d;
-    transition: transform 4s;
+    transition: transform 1s;
     width: 200px;
 }
-
-/* .card:hover .card-inner {
-    transform: rotateY(180deg);
-} */
 
 .card-front, .card-back {
     backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
+    border-radius: 1rem;
+    cursor: pointer;
     height: 100%;
     position: absolute;
     width: 100%;
 }
 
 .card-back {
-    background-color: red;
-    /* display: ; */
     transform: rotateY(180deg);
 }
 
@@ -44,12 +36,13 @@ img {
 }
 
 .card-image-front {
+    border-radius: 1rem 1rem 0 0;
     height: 300px;
     width: 100%;
 }
 
 .card-status {
-    background-color: green;
+    border-radius: 0 0 1rem 1rem;
     font-size: 1.2rem;
     font-weight: bold;
     padding: 0.5rem;
@@ -57,6 +50,27 @@ img {
 }
 
 .card-image-back {
+    border-radius: 1rem 1rem 0 0;
     height: 66%;
     width: 100%;
+}
+
+.card-back h4 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0 0.5rem;
+}
+
+.card-back h5 {
+    font-size: 0.9rem;
+    margin: 0 0 0.3rem;
+}
+
+.card-back a {
+    color: rgb(130, 10, 30);
+    font-size: 0.9rem;
+}
+
+.card-back a:hover {
+    color: rgb(160, 40, 60);
+    text-decoration: none;
 }

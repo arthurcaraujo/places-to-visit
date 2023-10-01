@@ -45,7 +45,7 @@ export default function CountryRow({props}) {
         const cardWidth = parseInt(
             getComputedStyle(cardsContainerRef.current.children[0]).width
         );
-        cardsContainerRef.current.scrollLeft += cardWidth * direction;
+        cardsContainerRef.current.scrollLeft += (cardWidth + 25.6) * direction;
     }
 
     return (
@@ -60,26 +60,26 @@ export default function CountryRow({props}) {
                         placeProps={place}
                     />
                 )}
+                {
+                    (internalWidth > externalWidth) &&
+                    (Math.floor(internalWidth - rowPosition) > externalWidth) &&
+                    <button
+                        className="row-btn next"
+                        onClick={() => scroll(1)}
+                    >
+                        <i className="fa fa-arrow-right"></i>
+                    </button>
+                }
+                {
+                    (rowPosition > 0) &&
+                    <button
+                        className="row-btn previous"
+                        onClick={() => scroll(-1)}
+                    >
+                        <i className="fa fa-arrow-left"></i>
+                    </button>
+                }
             </div>
-            {
-                (internalWidth > externalWidth) &&
-                (Math.floor(internalWidth - rowPosition) > externalWidth) &&
-                <button
-                    className="row-btn next"
-                    onClick={() => scroll(1)}
-                >
-                    <i className="fa fa-arrow-right"></i>
-                </button>
-            }
-            {
-                (rowPosition > 0) &&
-                <button
-                    className="row-btn previous"
-                    onClick={() => scroll(-1)}
-                >
-                    <i className="fa fa-arrow-left"></i>
-                </button>
-            }
         </section>
     )
 }

@@ -3,12 +3,16 @@ h1 {
     color: #fff;
     font-size: 1.5rem;
     padding: 1rem 0.5rem;
+    position: fixed;
     text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 20;
 }
 
 h2 {
-    background-color: grey;
+    /* background-color: grey; */
     font-size: 2rem;
-    padding: 2rem 0.5rem;
+    padding: 5.5rem 0.5rem 2rem;
     text-align: center;
 }

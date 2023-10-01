@@ -1,0 +1,27 @@
+#flip-tip {
+    font-size: 1rem;
+    margin: 0 1rem 1rem;
+}
+
+#flip-all-cards-btn {
+    background-color: rgb(150, 0, 0);
+    border: 1px solid #000;
+    border-radius: 1rem;
+    bottom: 0;
+    color: #fff;
+    font-size: 1rem;
+    left: 50%;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    position: sticky;
+    transform: translateX(-50%);
+    z-index: 20;
+}
+
+#flip-all-cards-btn:hover {
+    background-color: rgb(200, 0, 0);
+}
+
+#flip-all-cards-btn:active {
+    background-color: rgb(250, 0, 50);
+}

@@ -1,20 +1,22 @@
 .country-row {
-    background-color: #999;
+    background-color: #FFF;
     position: relative;
 }
 
 .country-name {
-    background-color: red;
+    background-color: #999;
     font-size: 1.25rem;
-    padding: 0.5rem 0;
+    padding: 0.5rem 1rem;
 }
 
 .cards-container {
+    /* background-color: black; */
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
     overflow-y: hidden;
     -ms-overflow-style: none;
+    padding: 1.3rem 0.5rem;
     scrollbar-width: none;
     scroll-behavior: smooth;
 }
