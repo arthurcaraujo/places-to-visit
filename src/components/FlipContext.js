@@ -4,16 +4,15 @@ const FlipContext = createContext(undefined);
 
 export const FlipProvider = ({children}) => {
     const [flipAllCards, setflipAllCards] = useState(false);
-    // const [numOfVisitedPlaces, setNumOfVisitedPlaces] = useState(0);
+    const [darkMode, setDarkMode] = useState(false);
 
     return (
         <FlipContext.Provider
             value={{
                 flipAllCards,
                 toggleFlipAllCards: () => setflipAllCards(flipAllCards ? false : true),
-                // numOfVisitedPlaces,
-                // sumPlace: () => setNumOfVisitedPlaces(numOfVisitedPlaces++),
-                // subtractPlace: () => setNumOfVisitedPlaces(numOfVisitedPlaces--)
+                darkMode,
+                toggleDarkMode: () => setDarkMode(darkMode ? false : true)
             }}
         >
             {children}

@@ -1,8 +1,13 @@
 h1 {
+    align-content: center;
+    align-items: center;
     background-color: rgb(150, 30, 50);
     color: #fff;
+    display: grid;
     font-size: 1.5rem;
-    padding: 1rem 0.5rem;
+    grid-template-columns: 3rem auto 3rem;
+    justify-items: center;
+    padding: 0.5rem 0;
     position: fixed;
     text-align: center;
     top: 0;
@@ -10,9 +15,49 @@ h1 {
     z-index: 20;
 }
 
+h1 > span {
+    grid-column: 2 / 3;
+}
+
 h2 {
-    /* background-color: grey; */
     font-size: 2rem;
     padding: 5.5rem 0.5rem 2rem;
     text-align: center;
+}
+
+.switch {
+    border-radius: 1rem;
+    cursor: pointer;
+    display: inline-block;
+    grid-column: 3 / 4;
+    height: 3rem;
+    position: relative;
+    transition: 0.5s;
+    width: 2rem;
+}
+
+.switch input {
+    height: 0;
+    opacity: 0;
+    width: 0;
+}
+
+.slider {
+    background-color: rgb(250, 200, 0);
+    border-radius: 50%;
+    height: 1rem;
+    left: 0.5rem;
+    outline: 0.25rem double yellow;
+    position: absolute;
+    top: 0.5rem;
+    transition: 0.5s;
+    width: 1rem;
+}
+
+input:checked + .slider {
+    background-color: #777;
+    outline: none;
+    -ms-transform: translateY(1rem);
+    -webkit-transform: translateY(1rem);
+    transform: translateY(1rem);
 }

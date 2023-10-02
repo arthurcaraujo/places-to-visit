@@ -1,15 +1,17 @@
 import "./CountryRow.css";
 import PlaceCard from "./PlaceCard";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { useFlipping } from "./FlipContext";
 
 export default function CountryRow({props}) {
     const countryRowRef = useRef(null);
     const cardsContainerRef = useRef(null);
 
+    const {darkMode} = useFlipping();
+
     const [externalWidth, setExternalWidth] = useState(0);
     const [internalWidth, setInternalWidth] = useState(0);
     const [rowPosition, setRowPosition] = useState(0);
-    // const [endScrolling, setEndScrolling] = useState(false);
 
     useLayoutEffect(() => {
         setExternalWidth(countryRowRef.current.clientWidth);
@@ -49,8 +51,18 @@ export default function CountryRow({props}) {
     }
 
     return (
-        <section className="country-row" ref={countryRowRef}>
-            <h3 className="country-name">
+        <section
+            className="country-row"
+            ref={countryRowRef}
+            style={{backgroundColor: darkMode ? "#2B2B35" : "#FFF"}}
+        >
+            <h3
+                className="country-name"
+                style={{
+                    backgroundColor: darkMode ? "#111" : "#999",
+                    color: darkMode ? "#fff" : "#000"
+                }}
+            >
                 {props[0].countryName}
             </h3>
             <div className="cards-container" ref={cardsContainerRef}>

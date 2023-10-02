@@ -4,11 +4,18 @@ import "./Main.css";
 import { useFlipping } from "./FlipContext";
 
 export default function Main() {
-    const {toggleFlipAllCards} = useFlipping();
+    const {darkMode, toggleFlipAllCards} = useFlipping();
 
     return (
-        <main>
-            <p id="flip-tip">Click on the cards to flip them.</p>
+        <main
+            style={{ backgroundColor: darkMode ? "#2B2B35" : "#fff" }}
+        >
+            <p
+                id="flip-tip"
+                style={{ color: darkMode ? "#fff" : "#000" }}
+            >
+                Click on the cards to flip them.
+            </p>
             {data.map(country =>
                 <CountryRow
                     key={country[0].countryName}
