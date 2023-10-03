@@ -3,6 +3,7 @@
 }
 
 .country-name {
+    color: #fff;
     font-size: 1.25rem;
     padding: 0.5rem 1rem;
 }
@@ -47,4 +48,29 @@
 
 .row-btn.next {
     right: 1rem;
+}
+
+@media (min-width: 768px) {
+    .country-row {
+        margin: 0 auto;
+        width: 45rem;  /* 720px = 45rem */
+    }
+
+    .country-name {
+        border-radius: 0.5rem;
+    }
+
+    .row-btn.previous {
+        left: -1.5rem;
+    }
+
+    .row-btn.next {
+        right: -1.5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .country-row {
+        width: 60rem;  /* 960px = 60rem */
+    }
 }

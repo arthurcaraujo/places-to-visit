@@ -1,18 +1,18 @@
 .card {
     background-color: transparent;
-    height: calc(300px + 2.2rem);
+    height: calc(18.75rem + 2.2rem);  /* 300px = 18.75rem */
     margin: 0 0.8rem;
     perspective: 1000px;
-    width: 200px;
+    width: 12.5rem;  /* 200px = 12.5rem */
 }
 
 .card-inner {
     border-radius: 1rem;
-    height: calc(300px + 2.2rem);
+    height: calc(18.75rem + 2.2rem);
     position: relative;
     transform-style: preserve-3d;
     transition: transform 1s;
-    width: 200px;
+    width: 12.5rem;
 }
 
 .card-front, .card-back {
@@ -37,7 +37,7 @@ img {
 
 .card-image-front {
     border-radius: 1rem 1rem 0 0;
-    height: 300px;
+    height: 18.75rem;
     width: 100%;
 }
 

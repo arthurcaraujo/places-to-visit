@@ -1,6 +1,6 @@
+import "./Main.css";
 import CountryRow from "./CountryRow";
 import data from "../data";
-import "./Main.css";
 import { useFlipping } from "./FlipContext";
 
 export default function Main() {

@@ -5,7 +5,7 @@
 
 #flip-all-cards-btn {
     background-color: rgb(140, 20, 40);
-    border: 2px solid #fff;
+    border: 2px solid #FFF;
     border-radius: 1rem;
     bottom: 0;
     color: #fff;
@@ -25,4 +25,17 @@
 
 #flip-all-cards-btn:active {
     background-color: rgb(200, 0, 20);
+}
+
+@media (min-width: 768px) {
+    #flip-tip {
+        margin: 0 auto 1rem;
+        width: 45rem;  /* 720px = 45rem */
+    }
+}
+
+@media (min-width: 1200px) {
+    #flip-tip {
+        width: 60rem;
+    }
 }

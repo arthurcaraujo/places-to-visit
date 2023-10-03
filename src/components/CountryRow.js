@@ -54,18 +54,24 @@ export default function CountryRow({props}) {
         <section
             className="country-row"
             ref={countryRowRef}
-            style={{backgroundColor: darkMode ? "#2B2B35" : "#FFF"}}
+            style={{
+                backgroundColor: darkMode ? "#2B2B35" : "#FFF",
+                borderColor: darkMode ? "#111" : "#333"
+            }}
         >
             <h3
                 className="country-name"
-                style={{
-                    backgroundColor: darkMode ? "#111" : "#999",
-                    color: darkMode ? "#fff" : "#000"
-                }}
+                style={{backgroundColor: darkMode ? "#111" : "#333"}}
             >
                 {props[0].countryName}
             </h3>
-            <div className="cards-container" ref={cardsContainerRef}>
+            <div
+                className="cards-container"
+                ref={cardsContainerRef}
+                style={{
+                    borderColor: darkMode ? "#111" : "#333"
+                }}
+            >
                 {props.map(place =>
                     <PlaceCard
                         key={place.title}

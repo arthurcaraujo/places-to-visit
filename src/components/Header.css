@@ -61,3 +61,16 @@ input:checked + .slider {
     -webkit-transform: translateY(1rem);
     transform: translateY(1rem);
 }
+
+@media (min-width: 768px) {
+    h1 {
+        grid-template-columns: 2rem 41rem 2rem;  /* 720px = 45rem */
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    h1 {
+        grid-template-columns: 2rem 56rem 2rem;  /* 960px = 60rem */
+    }
+}
