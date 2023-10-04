@@ -4,15 +4,15 @@ import data from "../data";
 import { useFlipping } from "./FlipContext";
 
 export default function Main() {
-    const {darkMode, toggleFlipAllCards} = useFlipping();
+    const {theme, toggleFlipAllCards} = useFlipping();
 
     return (
         <main
-            style={{ backgroundColor: darkMode ? "#2B2B35" : "#fff" }}
+            style={{ backgroundColor: (theme === "dark") ? "#2B2B35" : "#FFF" }}
         >
             <p
                 id="flip-tip"
-                style={{ color: darkMode ? "#fff" : "#000" }}
+                style={{ color: (theme === "dark") ? "#FFF" : "#000" }}
             >
                 Click on the cards to flip them.
             </p>

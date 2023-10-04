@@ -43,23 +43,13 @@ h2 {
 }
 
 .slider {
-    background-color: rgb(250, 200, 0);
     border-radius: 50%;
     height: 1rem;
     left: 0.5rem;
-    outline: 0.25rem double yellow;
     position: absolute;
     top: 0.5rem;
     transition: 0.5s;
     width: 1rem;
-}
-
-input:checked + .slider {
-    background-color: #777;
-    outline: none;
-    -ms-transform: translateY(1rem);
-    -webkit-transform: translateY(1rem);
-    transform: translateY(1rem);
 }
 
 @media (min-width: 768px) {

@@ -7,7 +7,7 @@ export default function CountryRow({props}) {
     const countryRowRef = useRef(null);
     const cardsContainerRef = useRef(null);
 
-    const {darkMode} = useFlipping();
+    const {theme} = useFlipping();
 
     const [externalWidth, setExternalWidth] = useState(0);
     const [internalWidth, setInternalWidth] = useState(0);
@@ -55,13 +55,13 @@ export default function CountryRow({props}) {
             className="country-row"
             ref={countryRowRef}
             style={{
-                backgroundColor: darkMode ? "#2B2B35" : "#FFF",
-                borderColor: darkMode ? "#111" : "#333"
+                backgroundColor: (theme === "dark") ? "#2B2B35" : "#FFF",
+                borderColor: (theme === "dark") ? "#111" : "#333"
             }}
         >
             <h3
                 className="country-name"
-                style={{backgroundColor: darkMode ? "#111" : "#333"}}
+                style={{backgroundColor: (theme === "dark") ? "#111" : "#333"}}
             >
                 {props[0].countryName}
             </h3>
@@ -69,7 +69,7 @@ export default function CountryRow({props}) {
                 className="cards-container"
                 ref={cardsContainerRef}
                 style={{
-                    borderColor: darkMode ? "#111" : "#333"
+                    borderColor: (theme === "dark") ? "#111" : "#333"
                 }}
             >
                 {props.map(place =>
