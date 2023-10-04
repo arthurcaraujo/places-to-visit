@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/places-to-visit/static/css/main.c33cf484.css",
-    "main.js": "/places-to-visit/static/js/main.e6182454.js",
+    "main.css": "/places-to-visit/static/css/main.32ee7ae0.css",
+    "main.js": "/places-to-visit/static/js/main.b36cc3d1.js",
     "static/js/787.9ded41b0.chunk.js": "/places-to-visit/static/js/787.9ded41b0.chunk.js",
     "static/media/nor-hammerfest.jpg": "/places-to-visit/static/media/nor-hammerfest.e7739dc11f1970dfc218.jpg",
     "static/media/aus-hobart.jpg": "/places-to-visit/static/media/aus-hobart.a881ba6942d37f9b6e0e.jpg",
@@ -21,12 +21,12 @@
     "static/media/bra-gramado.jpg": "/places-to-visit/static/media/bra-gramado.c7a7ba3f63735ef08a8d.jpg",
     "static/media/aus-12-apostles.jpg": "/places-to-visit/static/media/aus-12-apostles.fd7bc0cce5570c625371.jpg",
     "index.html": "/places-to-visit/index.html",
-    "main.c33cf484.css.map": "/places-to-visit/static/css/main.c33cf484.css.map",
-    "main.e6182454.js.map": "/places-to-visit/static/js/main.e6182454.js.map",
+    "main.32ee7ae0.css.map": "/places-to-visit/static/css/main.32ee7ae0.css.map",
+    "main.b36cc3d1.js.map": "/places-to-visit/static/js/main.b36cc3d1.js.map",
     "787.9ded41b0.chunk.js.map": "/places-to-visit/static/js/787.9ded41b0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c33cf484.css",
-    "static/js/main.e6182454.js"
+    "static/css/main.32ee7ae0.css",
+    "static/js/main.b36cc3d1.js"
   ]
 }
