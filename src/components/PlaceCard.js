@@ -34,7 +34,7 @@ export default function PlaceCard({placeProps}) {
                         alt={placeProps.title}
                         className="card-image-front"
                         onClick={handleFlipCard}
-                        src={require(`../assets/${placeProps.img}`)}
+                        src={require(`../assets/${placeProps.imgA}`)}
                     />
                     <div
                         className="card-status"
@@ -54,7 +54,7 @@ export default function PlaceCard({placeProps}) {
                     <img
                         alt={placeProps.title}
                         className="card-image-back"
-                        src={require(`../assets/${placeProps.img}`)}
+                        src={require(`../assets/${placeProps.imgB}`)}
                     />
                     <h4>{placeProps.title}</h4>
                     <h5>{placeProps.location}</h5>
