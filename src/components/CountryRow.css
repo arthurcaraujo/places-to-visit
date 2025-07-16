@@ -50,10 +50,10 @@
     right: 1rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
     .country-row {
         margin: 0 auto;
-        width: 45rem;  /* 720px = 45rem */
+        width: 33.75rem;  /* 540px = 33.75rem */
     }
 
     .country-name {
@@ -66,6 +66,12 @@
 
     .row-btn.next {
         right: -1.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .country-row {
+        width: 45rem;  /* 720px = 45rem */
     }
 }
 

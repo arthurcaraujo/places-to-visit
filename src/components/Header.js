@@ -1,13 +1,22 @@
 import "./Header.css";
 import { useFlipping } from "./FlipContext";
+import websiteLogo from "../assets/website-logo.png";
 
 export default function Header() {
     const {theme, toggleTheme} = useFlipping();
 
     return (
         <header>
-            <h1>
-                <span>My travel journal</span>
+            <nav>
+                <a
+                    href="https://arthurcaraujo.github.io/"
+                    id="main-website-link"
+                >
+                    <img alt="Website logo" src={websiteLogo} />
+                    <span id="logo-first-name">ARTHUR</span>
+                    <span id="logo-last-name">C. ARAÚJO</span>
+                </a>
+                <h1>My travel<br/> journal</h1>
                 <label
                     className="switch"
                     style={{
@@ -31,7 +40,7 @@ export default function Header() {
                         }}
                     ></span>
                 </label>
-            </h1>
+            </nav>
             <h2
                 style={{
                     backgroundColor: (theme === "dark") ? "#2B2B35" : "#FFF",

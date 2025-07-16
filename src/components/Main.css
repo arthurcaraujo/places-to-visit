@@ -27,15 +27,21 @@
     background-color: rgb(200, 0, 20);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
     #flip-tip {
         margin: 0 auto 1rem;
+        width: 33.75rem;  /* 540px = 33.75rem */
+    }
+}
+
+@media (min-width: 768px) {
+    #flip-tip {
         width: 45rem;  /* 720px = 45rem */
     }
 }
 
 @media (min-width: 1200px) {
     #flip-tip {
-        width: 60rem;
+        width: 60rem;  /* 960px = 60rem */
     }
 }

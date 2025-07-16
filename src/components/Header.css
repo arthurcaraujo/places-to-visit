@@ -1,11 +1,9 @@
-h1 {
+nav {
     align-content: center;
     align-items: center;
     background-color: rgb(150, 30, 50);
-    color: #fff;
     display: grid;
-    font-size: 1.5rem;
-    grid-template-columns: 3rem auto 3rem;
+    grid-template-columns: 9rem calc(100% - 12rem) 3rem;
     justify-items: center;
     padding: 0.5rem 0;
     position: fixed;
@@ -15,7 +13,65 @@ h1 {
     z-index: 20;
 }
 
-h1 > span {
+#main-website-link {
+    align-items: center;
+    display: grid;
+    gap: 0rem 0.1rem;
+    grid-column: 1 / 2;
+    grid-template-columns: 2.5rem auto;
+    grid-template-rows: 1.4rem 1.1rem;
+    justify-self: start;
+    margin-left: 0.5rem;
+    text-decoration: none;
+}
+
+#main-website-link > img {
+    border: 2px solid #322;
+    border-radius: 50%;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    height: 2.5rem;
+    margin-right: 0.5rem;
+    max-height: 100%;
+    transition: border 0.5s, transform 0.5s;
+    width: 2.5rem;
+}
+
+#main-website-link:hover > img {
+    transform: scale(1.125);
+}
+
+#main-website-link:active > img {
+    border: 2px solid #ddd;
+}
+
+/*
+1.4 --- 1.2
+1.1 --- x
+x = 0.9428rem
+*/
+
+#logo-first-name {
+    color: #fff;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1;
+    text-shadow: 2px 2px 1px #000;
+}
+
+#logo-last-name {
+    color: rgb(255, 178, 50);
+    font-family: "Nunito", sans-serif;
+    font-size: 0.9428rem;
+    font-style: italic;
+    line-height: 1;
+    text-shadow: 2px 2px 1px #000;
+    white-space: nowrap;
+}
+
+h1 {
+    color: #fff;
+    font-size: 1.5rem;
     grid-column: 2 / 3;
 }
 
@@ -52,15 +108,67 @@ h2 {
     width: 1rem;
 }
 
-@media (min-width: 768px) {
-    h1 {
-        grid-template-columns: 2rem 41rem 2rem;  /* 720px = 45rem */
+@media (min-width: 576px) {
+    nav {
+        grid-template-columns: 6rem 25.75rem 2rem;  /* 540px = 33.75rem */
         justify-content: center;
+    }
+
+    #main-website-link {
+        margin-left: 0;
+    }
+
+    h1 > br {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    nav {
+        grid-template-columns: 2rem 41rem 2rem;  /* 720px = 45rem */
+    }
+
+    #main-website-link {
+        gap: 0rem 0.3rem;
+    }
+
+    #logo-first-name {
+        font-size: 1.4rem;
+    }
+
+    #logo-last-name {
+        font-size: 1.1rem;
     }
 }
 
 @media (min-width: 1200px) {
-    h1 {
+    nav {
         grid-template-columns: 2rem 56rem 2rem;  /* 960px = 60rem */
+    }
+
+    #main-website-link {
+        grid-template-columns: 3rem auto;
+        grid-template-rows: 1.68rem 1.32rem;
+    }
+
+    #main-website-link > img {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    #logo-first-name {
+        font-size: 1.68rem;
+    }
+
+    #logo-last-name {
+        font-size: 1.32rem;
+    }
+
+    h1 {
+        font-size: 1.9rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
     }
 }
