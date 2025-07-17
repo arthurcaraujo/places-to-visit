@@ -12,7 +12,12 @@ export default function Footer() {
                 color: theme === "dark" ? "#fff" : "#000"
             }}
         >
-            Arthur C. Araújo - {new Date().getFullYear()}
+            <a
+                href="https://arthurcaraujo.github.io/"
+                style={{color: (theme === "dark") ? "#fff" : "#000"}}
+            >
+                Arthur C. Araújo
+            </a> - {new Date().getFullYear()}
         </footer>
     )
 }
